@@ -45,12 +45,12 @@ int main() {
     struct Territorio territorios[MAX_TERRITORIOS];
 
     printf("========================================\n");
-    printf("     Cadastro dos Territórios \n");
+    printf("   WAR ESTRUTURADO - CADASTRO INICIAL \n");
     printf("========================================\n\n");
 
     // Cadastro de territórios
     for (int i = 0; i < MAX_TERRITORIOS; i++) {
-        printf(" --- Cadastro de Territórios %d --- \n", i + 1);
+        printf(" --- Cadastro de Território %d --- \n", i + 1);
 
         printf("Nome do Território: ");
         fgets(territorios[i].nome, TAM_STRING, stdin);
@@ -69,18 +69,18 @@ int main() {
 
     // Exibe os 5 territórios cadastrados
     printf("\n=======================================================\n");
-    printf("                 MAPA DO MUNDO INICIAL\n");
+    printf("             MAPA DO MUNDO - ESTADO ATUAL\n");
     printf("=======================================================\n");
 
     for (int i = 0; i < MAX_TERRITORIOS; i++) {
-        printf("Território %d\n", i + 1);
+        printf("TERRITÓRIO %d\n", i + 1);
         printf("Nome: %s\n", territorios[i].nome);
         printf("Dominado por: %s\n", territorios[i].corExercito);
         printf("Tropas: %d\n", territorios[i].qtdTropas);
         printf("-----------------------------------------\n");
     }
 
-    printf("\nCadastro concluído!\n");
+    printf("\nCadastro concluído!!!\n");
 
     return 0;
 }
